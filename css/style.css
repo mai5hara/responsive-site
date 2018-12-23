@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #f5f5dc; }
+
+/* background-image
+------------------------------------------------------------*/
+header {
+  height:500px; 
+  background-image:url("../images/mountain.jpg");
+  background-position:center;
+  margin-bottom:10px;
+}
+
+/* contents
+------------------------------------------------------------*/
+.container {
+  /*background: #556b2f;*/
+  display: flex;
+}
+
+h2 {
+  color: #f5f5dc;
+}
+  
+h1 {
+  font-size:3rem;
+  font-weight:bold;
+  margin-bottom:20px;
+  text-align:center;
+}  
+
+.article {
+  background-color:khaki;
+  width:33.33%;
+  margin-right:10px;
+}
+
+.article:last-of-type {
+  margin-right:0;
+}
+
+.article h2 {
+  background-color:darkseagreen;
+  font-size:2rem;
+  text-align: center;
+  width:100%;
+}
+
+.article p{
+  padding:15px;
+}
+
+section {
+  width:90%;
+  margin:0 auto;
+}
+
+footer {
+  background-color:white;
+  margin-top:20px;
+  text-align:center;
+  padding:20px;
+  }
+  
+footer p {
+  color:#556b2f;
+  margin-bottom:20px;
+  font-size:2rem;
+}
+
+footer a {
+  display:block;
+  background-color:#556b2f;
+  color:white;
+  padding:10px 30px;
+  text-align:center;
+  text-decoration:none;
+  border-radius:10px;
+  width:40%;
+  margin:0 auto;
+}
+
+@media (max-width: 768px){
+  h1 {
+    font-size:2rem;
+  }
+  header {
+  height:250px; 
+  }
+  .container {
+  flex-direction: column;
+}
+  .article {
+    width:100%;
+    margin-bottom:10px;
+  }
+  footer a{
+    margin-bottom:50px;
+  }
+} 
